@@ -1,6 +1,10 @@
-# favorites_cartoons
+# Cartoons
 
-A new Flutter project.
+A Flutter dummy app to showcase cartoons.
+
+## Inspiration 
+![alt text](https://im.ezgif.com/tmp/ezgif-1-03fb382c4e25.gif "Inspiration")
+
 
 ## Getting Started
 
