@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-      bottomNavigationBar: FancyTabBar(),
+      //bottomNavigationBar: FancyTabBar(),
       body: Column(
         children: [
           AppHeader(),
