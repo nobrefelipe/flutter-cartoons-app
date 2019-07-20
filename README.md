@@ -3,7 +3,7 @@
 A Flutter dummy app to showcase cartoons.
 
 ## Inspiration 
-![alt text](https://im.ezgif.com/tmp/ezgif-1-03fb382c4e25.gif "Inspiration")
+![alt text](https://res.cloudinary.com/flavy/image/upload/v1563615036/ezgif-1-03fb382c4e25_ve7oyi.gif "Inspiration")
 
 
 ## Getting Started
