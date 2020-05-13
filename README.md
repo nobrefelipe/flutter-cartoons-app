@@ -8,6 +8,7 @@ The main focus here is the carousel, where we can swipe to the next character an
 
 Other than that, we have a nice transition between the carousel and the character detail page.
 
+Try the web version [here.](https://flutter-cartoons-app.felipenobre.now.sh/)  (smartphone only)<br>
 As Flutter web is still in beta, the app doesnt works very nice on the web.<br>
 So I recorded the native working version, [you can try it here.](https://dribbble.com/shots/6403829-Movie-Character-UI-Animation)
 
