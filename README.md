@@ -2,10 +2,11 @@
 
 Cartoons, vivid colors, animations and transitions. What's better than that? Flutter! In this experiment I implemented a concept from Dribbble designer Brio6.
 
-You can check the original [designs here.](https://dribbble.com/shots/6403829-Movie-Character-UI-Animation)
 
 ## Inspiration 
-![alt text](https://firebasestorage.googleapis.com/v0/b/weddy-app-1.appspot.com/o/other%2Fezgif.com-resize.gif?alt=media&token=93e700d3-be8b-4a94-a082-60764c5d8270 "Inspiration")
+You can check the original [designs here.](https://dribbble.com/shots/6403829-Movie-Character-UI-Animation)
+
+![alt text](https://felipenobre.now.sh/img/cartoons-app.4558defe.jpg "Inspiration")
 
 
 This is a simple concept but full of nice opportunities to learn what Flutter has to offer.
@@ -16,3 +17,10 @@ Other than that, we have a nice transition between the carousel and the characte
 
 As Flutter web is still in beta, the app doesnt works very nice on the web. 
 So I recorded the native working version, [you can try it here.](https://dribbble.com/shots/6403829-Movie-Character-UI-Animation)
+
+
+
+
+
+
+
