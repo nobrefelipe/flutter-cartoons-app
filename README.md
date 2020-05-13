@@ -1,8 +1,6 @@
 # Flutter Favorite Cartoons App
 
-Cartoons, vivid colors, animations and transitions. What's better than that? Flutter! 
 In this experiment I implemented a concept from Dribbble designer Brio6.
-
 
 This is a simple concept but full of nice opportunities to learn what Flutter has to offer.
 
@@ -10,7 +8,7 @@ The main focus here is the carousel, where we can swipe to the next character an
 
 Other than that, we have a nice transition between the carousel and the character detail page.
 
-As Flutter web is still in beta, the app doesnt works very nice on the web.
+As Flutter web is still in beta, the app doesnt works very nice on the web.<br>
 So I recorded the native working version, [you can try it here.](https://dribbble.com/shots/6403829-Movie-Character-UI-Animation)
 
 
