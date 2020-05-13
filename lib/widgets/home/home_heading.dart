@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
-import '../widgets/AppTheme.dart';
+import '../../theme/AppTheme.dart';
 
-class AppHeader extends StatelessWidget {
+class HomeHeading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(

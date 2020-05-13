@@ -1,20 +1,20 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import '../widgets/characters.dart';
-import '../widgets/AppTheme.dart';
-import '../widgets/character_image_widget.dart';
+import '../models/characters.dart';
+import '../theme/AppTheme.dart';
+import '../widgets/character_page/character_image.dart';
 
-class CharacterScreenCustomSliver extends StatefulWidget {
+class CharacterScreen extends StatefulWidget {
   final Character character;
 
-  const CharacterScreenCustomSliver({Key key, this.character}) : super(key: key);
+  const CharacterScreen({Key key, this.character}) : super(key: key);
 
   @override
-  _CharacterScreenCustomSliverState createState() => _CharacterScreenCustomSliverState();
+  _CharacterScreenState createState() => _CharacterScreenState();
 }
 
-class _CharacterScreenCustomSliverState extends State<CharacterScreenCustomSliver> {
+class _CharacterScreenState extends State<CharacterScreen> {
   ScrollController _controller = new ScrollController();
   Timer _timer;
   var _visible = false;
@@ -47,10 +47,9 @@ class _CharacterScreenCustomSliverState extends State<CharacterScreenCustomSlive
           // BACKGROUND
           Hero(
             tag: "background-${widget.character.id}",
-            child: DecoratedBox(
+            child: Container(
               decoration: BoxDecoration(
-                borderRadius:
-                    new BorderRadius.all(const Radius.circular(0.0)),
+                borderRadius:  BorderRadius.all(const Radius.circular(30.0)),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black12,
@@ -154,3 +153,5 @@ class _CharacterScreenCustomSliverState extends State<CharacterScreenCustomSlive
     );
   }
 }
+
+

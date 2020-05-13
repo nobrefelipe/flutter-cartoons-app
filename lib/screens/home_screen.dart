@@ -1,31 +1,26 @@
-import 'package:favorites_cartoons/widgets/AppTheme.dart';
-import 'package:favorites_cartoons/widgets/characters.dart';
-
 import 'package:flutter/material.dart';
-import '../widgets/character.dart';
-import '../widgets/characters.dart';
-import '../widgets/facy_tab_bar.dart';
-import '../widgets/tab_item.dart';
-import '../widgets/app_header_widget.dart';
-import '../widgets/app_bar_title_widget.dart';
+import '../widgets/home/home_heading.dart';
+import 'package:favorites_cartoons/widgets/home/character_item.dart';
+import 'package:favorites_cartoons/models/characters.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  PageController _controller = new PageController();
+  PageController _controller = new PageController(viewportFraction: 1);
 
   var appBarTitleOpacity = 1.0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      /*
+        AppBar Widget
+        Contains a back leading icon
+        and a search icon action
+      */
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
@@ -46,31 +41,43 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-      //bottomNavigationBar: FancyTabBar(),
       body: Column(
         children: [
-          AppHeader(),
-          Container(
-            height: 320,
+
+          /*
+            Heading widget containing title and subtitle
+          */
+          HomeHeading(),
+          Expanded(
+            /*
+              Lets use a PageView Widget for the carousel
+            */
             child: PageView(
               controller: _controller,
               scrollDirection: Axis.horizontal,
               children: <Widget>[
+                /*
+                  CharacterWidget will receive a Character Model Item,
+                  the page view controller and the item position in the list
+                */
                 for (var i = 0; i < characters.length; i++)
                   CharacterWidget(
                     character: characters[i],
                     controller: _controller,
-                    currentPage: i,
+                    position: i,
                   ),
               ],
             ),
           ),
-          
+          SizedBox(height: 80),
         ],
       ),
     );
   }
 
+  /* 
+    Make sure we dispose the controller when leaving this page
+  */
   @override
   void dispose() {
     _controller.dispose();
